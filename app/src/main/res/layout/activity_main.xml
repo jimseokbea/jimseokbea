@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/background"
+            android:src="@drawable/cat1"
+            android:alpha="0.6"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="고양이 품종 찾기"
+                android:textSize="45dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:alpha="0.8"
+                android:background="@drawable/cam"
+                android:backgroundTint="@color/white"
+                android:paddingLeft="15dp"
+                android:text="카메라"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/gallerybtn"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:alpha="0.8"
+                android:background="@drawable/cat1"
+                android:backgroundTint="@color/white"
+                android:paddingLeft="15dp"
+                android:text="갤러리"
+                android:textSize="25dp" />
+
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:alpha="0.8"
+                android:background="@drawable/cat1"
+                android:backgroundTint="@color/white"
+                android:paddingLeft="15dp"
+                android:text="게시판"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/share"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/cat1"
+                android:backgroundTint="@color/white"
+                android:paddingLeft="15dp"
+                android:text="공유"
+                android:textSize="25dp"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
